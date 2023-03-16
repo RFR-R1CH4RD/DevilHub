@@ -974,7 +974,7 @@ function Library:notification(options)
 		BackgroundTransparency = 1,
 		ImageTransparency = 1,
 		Position = UDim2.fromOffset(1, 1),
-		Size = UDim2.fromOffset(18, 18),
+		Size = UDim2.fromOffset(21, 21),
 		Image = "rbxassetid://12416116403",
 		Theme = {ImageColor3 = "Tertiary"}
 	})
