@@ -816,7 +816,7 @@ function Library:create(options)
 		Position = UDim2.new(1, -10, 1, -10),
 		AnchorPoint = Vector2.new(1, 1),
 		Image = "http://www.roblox.com/asset/?id=8559790237"
-	}):tooltip("settings")
+	}):tooltip("Settings")
 
 	local creditsTabIcon = profile:object("ImageButton", {
 		BackgroundTransparency = 1,
