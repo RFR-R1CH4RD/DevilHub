@@ -1,4 +1,25 @@
+--[[
 
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+█░░░░░░██████████░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░██░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░██░░░░░░░░█
+█░░▄▀░░░░░░░░░░░░░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀░░██░░▄▀▄▀░░█
+█░░▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░░░▄▀░░███░░░░▄▀░░██░░▄▀░░░░█
+█░░▄▀░░░░░░▄▀░░░░░░▄▀░░█░░▄▀░░█████████░░▄▀░░████░░▄▀░░███░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░████░░▄▀░░█████░░▄▀▄▀░░▄▀▄▀░░███
+█░░▄▀░░██░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░░░▄▀░░█████░░░░▄▀▄▀▄▀░░░░███
+█░░▄▀░░██░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███████░░░░▄▀░░░░█████
+█░░▄▀░░██░░░░░░██░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░yue<3▀░░░░███░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░▄▀░░░░█████████░░▄▀░░███████
+█░░▄▀░░██████████░░▄▀░░█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█████░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░██░░▄▀░░███████████░░▄▀░░███████
+█░░▄▀░░██████████░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░░░░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░▄▀░░█░░▄▀░░██░░▄▀░░░░░░███████░░▄▀░░███████
+█░░▄▀░░██████████░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀▄▀▄▀░░███████░░▄▀░░███████
+█░░░░░░██████████░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░███████░░░░░░███████
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+
+edited: 1/26
+developers:
+v3rm AbstractPoo	discord Abstract#8007
+v3rm 0xDEITY		discord Deity#0228
+
+]]
 
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -27,11 +48,11 @@ local Library = {
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
 		Dark = {
-			Main = Color3.fromRGB(20, 20, 20),
-			Secondary = Color3.fromRGB(27, 27, 27),
-			Tertiary = Color3.fromRGB(17, 17, 17),
+			Main = Color3.fromRGB(30, 30, 35),
+			Secondary = Color3.fromRGB(50, 50, 55),
+			Tertiary = Color3.fromRGB(70, 130, 180),
 
-			StrongText = Color3.fromHSV(180,6,15),		
+			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
 		Rust = {
@@ -411,10 +432,10 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "DevilHub",
+		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://github.com/RFR-R1CH4RD/DevilHub"
+		Link = "https://github.com/deeeity/mercury-lib"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
@@ -668,7 +689,7 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
 		Size = UDim2.new(0, 15, 0, 15),
-		Image = "http://www.roblox.com/asset/?id=12416116403",
+		Image = "http://www.roblox.com/asset/?id=8569322835",
 		Theme = {ImageColor3 = "StrongText"}
 	})
 
@@ -720,7 +741,7 @@ function Library:create(options)
 			selectedTab = homeButton
 			homePage.Visible = true
 			homeButton.BackgroundTransparency = 0
-			Library.UrlLabel.Text = Library.Url .. "/"
+			Library.UrlLabel.Text = Library.Url .. "/home"
 		end)
 	end
 
@@ -898,9 +919,9 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "RFR_R1CH4RD", Description = "Owner & Developer", Discord = "RFR_R1CH4RD#7586", V3rmillion = ""}
-	creditsTab:credit{Name = "Real Panda", Description = "Developer", Discord = "", V3rmillion = "Real Panda V3rmillion"}
-	creditsTab:credit{Name = "Iris", Description = "Developer", Discord = "", V3rmillion = "Iris V3rmillion"}
+	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
+	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
+	creditsTab:credit{Name = "Repository", Description = "UI Library Repository", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
 
 	return mt
 end
@@ -1228,7 +1249,7 @@ function Library:tab(options)
 			self.homePage.Visible = true
 			self.homeButton:tween{BackgroundTransparency = 0.15}
 			selectedTab = self.homeButton
-			Library.UrlLabel.Text = Library.Url .. "/"	
+			Library.UrlLabel.Text = Library.Url .. "/home"	
 		elseif tabButton == lastTab[2] then
 			lastTab = visible[#visible-1]
 			tab.Visible = false
