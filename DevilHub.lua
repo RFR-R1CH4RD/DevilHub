@@ -909,6 +909,7 @@ function Library:create(options)
 	creditsTab:credit{Name = "RFR_R1CH4RD", Description = "Owner & Developer", Discord = "RFR_R1CH4RD#7586", V3rmillion = ""}
 	creditsTab:credit{Name = "Real Panda", Description = "Developer", Discord = "", V3rmillion = "https://v3rmillion.net/member.php?action=profile&uid=46812"}
 	creditsTab:credit{Name = "Iris", Description = "Developer", Discord = "Iris#0410", V3rmillion = "https://v3rmillion.net/member.php?action=profile&uid=207161"}
+	creditsTab:credit{Name = "Deity#0228", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = ""}
 
 	return mt
 end
