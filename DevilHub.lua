@@ -37,7 +37,7 @@ local Library = {
 		Dark = {
 			Main = Color3.fromRGB(0, 0, 0),
 			Secondary = Color3.fromRGB(27, 27, 27),
-			Tertiary = Color3.fromRGB(128, 128, 128),
+			Tertiary = Color3.fromRGB(64, 64, 64),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
@@ -422,7 +422,7 @@ function Library:create(options)
 		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://github.com/deeeity/mercury-lib"
+		Link = "https://github.com/RFR-R1CH4RD/DevilHub"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
@@ -603,7 +603,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 26, 0.5, 0),
 		BackgroundTransparency = 1,
 		Size = UDim2.new(1, -30, .6, 0),
-		Text = options.Link .. "/home",
+		Text = options.Link .. "/",
 		Theme = {TextColor3 = "WeakText"},
 		TextSize = 14,
 		TextScaled = false,
@@ -676,7 +676,7 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
 		Size = UDim2.new(0, 15, 0, 15),
-		Image = "http://www.roblox.com/asset/?id=8569322835",
+		Image = "http://www.roblox.com/asset/?id=12416116403",
 		Theme = {ImageColor3 = "StrongText"}
 	})
 
