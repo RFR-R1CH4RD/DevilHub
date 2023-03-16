@@ -442,7 +442,7 @@ function Library:create(options)
 
 	self.CurrentTheme = options.Theme
 
-	local gui = self:object"DevilHub", {
+	local gui = self:object"ScreenGui", {
 		Parent = (RunService:IsStudio() and LocalPlayer.PlayerGui) or game:GetService("CoreGui"),
 		ZIndexBehavior = Enum.ZIndexBehavior.Global
 	})
