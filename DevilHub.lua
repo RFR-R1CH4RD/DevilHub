@@ -442,7 +442,7 @@ function Library:create(options)
 
 	self.CurrentTheme = options.Theme
 
-	local gui = self:object"ScreenGui", {
+	local gui = self:object("ScreenGui", {
 		Parent = (RunService:IsStudio() and LocalPlayer.PlayerGui) or game:GetService("CoreGui"),
 		ZIndexBehavior = Enum.ZIndexBehavior.Global
 	})
@@ -728,7 +728,7 @@ function Library:create(options)
 			selectedTab = homeButton
 			homePage.Visible = true
 			homeButton.BackgroundTransparency = 0
-			Library.UrlLabel.Text = Library.Url .. "/home"
+			Library.UrlLabel.Text = Library.Url .. "/"
 		end)
 	end
 
@@ -1236,7 +1236,7 @@ function Library:tab(options)
 			self.homePage.Visible = true
 			self.homeButton:tween{BackgroundTransparency = 0.15}
 			selectedTab = self.homeButton
-			Library.UrlLabel.Text = Library.Url .. "/home"	
+			Library.UrlLabel.Text = Library.Url .. "/"	
 		elseif tabButton == lastTab[2] then
 			lastTab = visible[#visible-1]
 			tab.Visible = false
