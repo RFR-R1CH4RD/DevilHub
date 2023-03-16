@@ -32,7 +32,7 @@ local Library = {
 			Tertiary = Color3.fromRGB(120, 120, 121),
 
 			StrongText = Color3.fromHSV(120, 120, 121),		
-			WeakText = Color3.fromHSV(182,6,57)
+			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
 		Rust = {
 			Main = Color3.fromRGB(37, 35, 33),
@@ -1228,7 +1228,7 @@ function Library:tab(options)
 			self.homePage.Visible = true
 			self.homeButton:tween{BackgroundTransparency = 0.15}
 			selectedTab = self.homeButton
-			Library.UrlLabel.Text = Library.Url .. "/home"	
+			Library.UrlLabel.Text = Library.Url .. "/"	
 		elseif tabButton == lastTab[2] then
 			lastTab = visible[#visible-1]
 			tab.Visible = false
