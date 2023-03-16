@@ -28,7 +28,7 @@ local Library = {
 		},
 		Dark = {
 			Main = Color3.fromRGB(20, 20, 20),
-			Secondary = Color3.fromRGB(20, 20, 20),
+			Secondary = Color3.fromRGB(77, 77, 77),
 			Tertiary = Color3.fromRGB(255, 255, 255),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
