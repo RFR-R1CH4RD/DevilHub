@@ -973,7 +973,7 @@ function Library:notification(options)
 	local icon = noti:object("ImageLabel", {
 		BackgroundTransparency = 1,
 		ImageTransparency = 1,
-		Position = UDim2.fromOffset(1, 1),
+		Position = UDim2.fromOffset(0, 0),
 		Size = UDim2.fromOffset(21, 21),
 		Image = "rbxassetid://12416116403",
 		Theme = {ImageColor3 = "Tertiary"}
