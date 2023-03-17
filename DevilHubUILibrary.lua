@@ -26,9 +26,9 @@ local Library = {
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
 		Celestial = {
-			Main = Color3.fromRGB(167, 167, 167),
+			Main = Color3.fromRGB(234, 234, 234),
 			Secondary = Color3.fromRGB(212, 185, 41),
-			Tertiary = Color3.fromRGB(0, 0, 0),
+			Tertiary = Color3.fromRGB(24, 24, 24),
 
 			StrongText = Color3.fromHSV(0, 0, 0),		
 			WeakText = Color3.fromHSV(0, 0, 0)
