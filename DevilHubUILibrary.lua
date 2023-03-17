@@ -17,13 +17,13 @@ local HTTPService = game:GetService("HttpService")
 
 local Library = {
 	Themes = {
-		Diabolic = {
-			Main = Color3.fromRGB(195, 12, 12),
-			Secondary = Color3.fromRGB(99, 0, 0),
-			Tertiary = Color3.fromRGB(28, 25, 25),
+		Midnight = {
+			Main = Color3.fromRGB(0, 0, 0),
+			Secondary = Color3.fromRGB(27, 27, 27),
+			Tertiary = Color3.fromRGB(64, 64, 64),
 
-			StrongText = Color3.fromHSV(0, 0, 100),		
-			WeakText = Color3.fromHSV(0, 0, 100)
+			StrongText = Color3.fromHSV(0, 0, 1),		
+			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
 		Serika = {
 			Main = Color3.fromRGB(50, 52, 55),
@@ -33,10 +33,10 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Midnight = {
-			Main = Color3.fromRGB(0, 0, 0),
-			Secondary = Color3.fromRGB(27, 27, 27),
-			Tertiary = Color3.fromRGB(64, 64, 64),
+		Legacy = {
+			Main = Color3.fromHSV(262/360, 60/255, 34/255),
+			Secondary = Color3.fromHSV(240/360, 40/255, 63/255),
+			Tertiary = Color3.fromHSV(260/360, 60/255, 148/255),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
