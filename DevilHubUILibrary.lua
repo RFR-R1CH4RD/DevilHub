@@ -28,7 +28,7 @@ local Library = {
 		Celestial = {
 			Main = Color3.fromRGB(255, 255, 255),
 			Secondary = Color3.fromRGB(212, 185, 41),
-			Tertiary = Color3.fromRGB(213, 210, 194),
+			Tertiary = Color3.fromRGB(167, 167, 167),
 
 			StrongText = Color3.fromHSV(0, 0, 0),		
 			WeakText = Color3.fromHSV(0, 0, 0)
