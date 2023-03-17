@@ -34,9 +34,9 @@ local Library = {
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
 		Diabolic = {
-			Main = Color3.fromRGB(75, 69, 69),
+			Main = Color3.fromRGB(195, 12, 12),
 			Secondary = Color3.fromRGB(99, 0, 0),
-			Tertiary = Color3.fromRGB(28, 25, 25),
+			Tertiary = Color3.fromRGB(67, 44, 44),
 
 			StrongText = Color3.fromHSV(0, 0, 100),		
 			WeakText = Color3.fromHSV(0, 0, 100)
