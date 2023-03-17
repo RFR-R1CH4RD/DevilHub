@@ -36,7 +36,7 @@ local Library = {
 		Diabolic = {
 			Main = Color3.fromRGB(195, 12, 12),
 			Secondary = Color3.fromRGB(99, 0, 0),
-			Tertiary = Color3.fromRGB(97, 25, 25),
+			Tertiary = Color3.fromRGB(172, 2, 2),
 
 			StrongText = Color3.fromHSV(0, 0, 100),		
 			WeakText = Color3.fromHSV(0, 0, 100)
