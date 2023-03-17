@@ -28,7 +28,7 @@ local Library = {
 		Celestial = {
 			Main = Color3.fromRGB(167, 167, 167),
 			Secondary = Color3.fromRGB(212, 185, 41),
-			Tertiary = Color3.fromRGB(167, 167, 167),
+			Tertiary = Color3.fromRGB(0, 0, 0),
 
 			StrongText = Color3.fromHSV(0, 0, 0),		
 			WeakText = Color3.fromHSV(0, 0, 0)
@@ -907,6 +907,7 @@ function Library:create(options)
 
 	creditsTab:credit{Name = "RFR_R1CH4RD", Description = "Owner & Developer", Discord = "RFR_R1CH4RD#7586", V3rmillion = ""}
 	creditsTab:credit{Name = "Real Panda", Description = "Developer", Discord = "", V3rmillion = "https://v3rmillion.net/member.php?action=profile&uid=46812"}
+	creditsTab:credit{Name = "DevilHub", Description = "Discord server link to join", Discord = "RFR_R1CH4RD#7586"}
 	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = ""}
 
 	return mt
