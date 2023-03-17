@@ -19,14 +19,14 @@ local Library = {
 	Themes = {
 		Legacy = {
 			Main = Color3.fromHSV(0, 100, 100),
-			Secondary = Color3.fromHSV(0, 100, 40),
-			Tertiary = Color3.fromHSV(0, 0, 0),
+			Secondary = Color3.fromHSV(0, 100, 55),
+			Tertiary = Color3.fromHSV(0, 1, 20),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
 		Serika = {
-			Main = Color3.fromRGB(50, 52, 55),
+			Main = Color3.fromRGB(0, 65, 44),
 			Secondary = Color3.fromRGB(80, 82, 85),
 			Tertiary = Color3.fromRGB(226, 183, 20),
 
