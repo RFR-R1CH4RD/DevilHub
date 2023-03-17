@@ -22,8 +22,8 @@ local Library = {
 			Secondary = Color3.fromHSV(0, 100, 55),
 			Tertiary = Color3.fromHSV(0, 1, 20),
 
-			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
+			StrongText = Color3.fromHSV(0, 0, 100),		
+			WeakText = Color3.fromHSV(0, 100, 100)
 		},
 		Serika = {
 			Main = Color3.fromRGB(0, 65, 44),
