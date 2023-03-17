@@ -18,7 +18,7 @@ local HTTPService = game:GetService("HttpService")
 local Library = {
 	Themes = {
 		Diabolic = {
-			Main = Color3.fromRGB(24, 24, 24),
+			Main = Color3.fromRGB(195, 12, 12),
 			Secondary = Color3.fromRGB(99, 0, 0),
 			Tertiary = Color3.fromRGB(28, 25, 25),
 
