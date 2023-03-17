@@ -17,8 +17,8 @@ local HTTPService = game:GetService("HttpService")
 
 local Library = {
 	Themes = {
-		Legacy = {
-			Main = Color3.fromRGB(0, 0, 0),
+		Diabolicy = {
+			Main = Color3.fromRGB(11, 10, 10),
 			Secondary = Color3.fromRGB(99, 0, 0),
 			Tertiary = Color3.fromRGB(28, 25, 25),
 
@@ -62,7 +62,7 @@ local Library = {
 		VisualStudio = {}
 	},
 	ColorPickerStyles = {
-		Legacy = 0,
+		Diabolic = 0,
 		Modern = 1
 	},
 	Toggled = true,
@@ -1850,7 +1850,7 @@ function Library:color_picker(options)
 	options = self:set_defaults({
 		Name = "Color Picker",
 		Description = nil,
-		Style = Library.ColorPickerStyles.Legacy,
+		Style = Library.ColorPickerStyles.Diabolic,
 		Followup = false,
 		Callback = function(color) end
 	}, options)
@@ -2261,7 +2261,7 @@ function Library:color_picker(options)
 				end
 			else
 				do
-					-- legacy
+					-- Diabolic
 					local holder = darkener:object("Frame", {
 						Centered = true,
 						Theme = {BackgroundColor3 = "Secondary"},
