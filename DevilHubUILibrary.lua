@@ -18,15 +18,15 @@ local HTTPService = game:GetService("HttpService")
 local Library = {
 	Themes = {
 		Legacy = {
-			Main = Color3.fromHSV(0, 93, 40),
-			Secondary = Color3.fromHSV(0, 100, 55),
-			Tertiary = Color3.fromHSV(0, 1, 20),
+			Main = Color3.fromHSV(262/360, 60/255, 34/255),
+			Secondary = Color3.fromHSV(240/360, 40/255, 63/255),
+			Tertiary = Color3.fromHSV(260/360, 60/255, 148/255),
 
-			StrongText = Color3.fromHSV(0, 0, 100),		
-			WeakText = Color3.fromHSV(0, 93, 40)
+			StrongText = Color3.fromHSV(0, 0, 1),		
+			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
 		Serika = {
-			Main = Color3.fromRGB(0, 65, 44),
+			Main = Color3.fromRGB(50, 52, 55),
 			Secondary = Color3.fromRGB(80, 82, 85),
 			Tertiary = Color3.fromRGB(226, 183, 20),
 
@@ -907,6 +907,7 @@ function Library:create(options)
 
 	creditsTab:credit{Name = "RFR_R1CH4RD", Description = "Owner & Developer", Discord = "RFR_R1CH4RD#7586", V3rmillion = ""}
 	creditsTab:credit{Name = "Real Panda", Description = "Developer", Discord = "", V3rmillion = "https://v3rmillion.net/member.php?action=profile&uid=46812"}
+	creditsTab:credit{Name = "Iris", Description = "Developer", Discord = "Iris#0410", V3rmillion = "https://v3rmillion.net/member.php?action=profile&uid=207161"}
 	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = ""}
 
 	return mt
