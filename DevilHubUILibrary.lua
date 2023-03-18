@@ -41,10 +41,10 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 100),		
 			WeakText = Color3.fromHSV(0, 0, 100)
 		},
-		Rust = {
-			Main = Color3.fromRGB(37, 35, 33),
-			Secondary = Color3.fromRGB(65, 63, 63),
-			Tertiary = Color3.fromRGB(237, 94, 38),
+		Twilight = {
+			Main = Color3.fromRGB(25, 25, 112),
+			Secondary = Color3.fromRGB(75, 0, 130),
+			Tertiary = Color3.fromRGB(192, 192, 192),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
