@@ -44,10 +44,10 @@ local Library = {
 		Twilight = {
 			Main = Color3.fromRGB(25, 25, 112),
 			Secondary = Color3.fromRGB(75, 0, 130),
-			Tertiary = Color3.fromRGB(192, 192, 192),
+			Tertiary = Color3.fromRGB(51, 1, 88),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
+			WeakText = Color3.fromHSV(0, 0, 1)
 		},
 		Aqua = {
 			Main = Color3.fromRGB(19, 21, 21),
@@ -907,8 +907,8 @@ function Library:create(options)
 
 	creditsTab:credit{Name = "RFR_R1CH4RD", Description = "Owner & Developer", Discord = "RFR_R1CH4RD#7586", V3rmillion = ""}
 	creditsTab:credit{Name = "Real Panda", Description = "Developer", Discord = "", V3rmillion = "https://v3rmillion.net/member.php?action=profile&uid=46812"}
-	creditsTab:credit{Name = "DevilHub", Description = "Discord server link to join", Discord = "RFR_R1CH4RD#7586"}
 	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = ""}
+	creditsTab:credit{Name = "DevilHub", Description = "Discord server link to join", Discord = "RFR_R1CH4RD#7586"}
 
 	return mt
 end
