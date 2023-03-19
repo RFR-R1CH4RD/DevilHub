@@ -1719,8 +1719,8 @@ function Library:section(options)
 	}):round(7):stroke("Secondary", 0)
 
 	local text = sectionContainer:object("TextLabel", {
-		Position = UDim2.new(0, 4, 0.7, 0),
-		AnchorPoint = Vector2.new(0, 0.7),	
+		Position = UDim2.new(0.01, 0, 0.5, 0),
+		AnchorPoint = Vector2.new(0, 0.5),	
 		Text = options.Name,
 		TextSize = 18,
 		Theme = {
@@ -1728,9 +1728,9 @@ function Library:section(options)
 			BackgroundColor3 = {"Secondary"}
 		},
 		TextXAlignment = Enum.TextXAlignment.Left, 
-		AnchorPoint = Vector2.new(0, 0.7)
+		AnchorPoint = Vector2.new(0, 0.5)
 	})
-	text.Position = UDim2.new(0, 4, 0.7, 0) 
+	text.Position = UDim2.new(0, 4, 0.5, 0) 
 
 
 	local functionContainer = sectionContainer:object("Frame", {
