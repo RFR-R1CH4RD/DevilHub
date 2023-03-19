@@ -1724,7 +1724,7 @@ function Library:section(options)
 	}):round(7):stroke("Secondary", 2)
 
 	local text = sectionContainer:object("TextLabel", {
-		Position = UDim2.new(0.0),
+		Position = UDim2.new(0, 0, 0.5, 0), -- X: 0, Y: 0.5
 		Text = options.Name,
 		TextSize = 18,
 		Theme = {
@@ -1732,7 +1732,7 @@ function Library:section(options)
 			BackgroundColor3 = {"Secondary", -10}
 		},
 		TextXAlignment = Enum.TextXAlignment.Center,
-		AnchorPoint = Vector2.new(0.0, 0.0)
+		AnchorPoint = Vector2.new(0, 0.5) -- X: 0, Y: 0.5
 	})
 	text.Size = UDim2.fromOffset(text.TextBounds.X + 4, text.TextBounds.Y)
 
