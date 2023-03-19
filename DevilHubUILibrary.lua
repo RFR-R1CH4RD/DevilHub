@@ -1773,7 +1773,7 @@ function Library:button(options)
 
 	local buttonContainer = self.container:object("TextButton", {
 		Theme = {BackgroundColor3 = "Secondary"},
-		Size = UDim2.new(1, -14, 0, 52)
+		Size = UDim2.new(1, -14, 0, 32)
 	}):round(7)
 
 	local text = buttonContainer:object("TextLabel", {
