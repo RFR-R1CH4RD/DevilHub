@@ -1725,7 +1725,7 @@ function Library:section(options)
 		TextSize = 18,
 		Theme = {
 			TextColor3 = "StrongText",
-			BackgroundColor3 = {"Secondary", -10}
+			BackgroundColor3 = {"}
 		},
 		TextXAlignment = Enum.TextXAlignment.Left, 
 		AnchorPoint = Vector2.new(0, 0.5)
