@@ -1726,7 +1726,7 @@ function Library:section(options)
 			TextColor3 = "StrongText",
 			BackgroundColor3 = {"Secondary", -10}
 		},
-		TextXAlignment = TextXAlignment = Enum.TextXAlignment.Left, 
+		TextXAlignment = Enum.TextXAlignment.Left, 
 		AnchorPoint = Vector2.new(0, 0.5)
 	})
 	text.Size = UDim2.fromOffset(text.TextBounds.X + 4, text.TextBounds.Y)
