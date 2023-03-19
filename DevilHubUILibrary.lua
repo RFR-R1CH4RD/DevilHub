@@ -1730,7 +1730,8 @@ function Library:section(options)
 		AnchorPoint = Vector2.new(0, 0.5)
 	})
 	text.Size = UDim2.fromOffset(text.TextBounds.X + 4, text.TextBounds.Y)
-	text.Position = UDim2.new(0, 4, 0.5, 0) 
+	text.Position = UDim2.new(0, 4, 0.5, 0)
+	text.TextXAlignment = Enum.TextXAlignment.Left
 
 
 	local functionContainer = sectionContainer:object("Frame", {
