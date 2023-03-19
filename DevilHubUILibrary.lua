@@ -1716,7 +1716,7 @@ function Library:section(options)
 	local sectionContainer = self.container:object("TextButton", {
 		BackgroundTransparency = 1,
 		Size = UDim2.new(1, 0, 0, 30)
-	}):round(7):stroke("Secondary", 2)
+	}):round(7):stroke("Secondary", 0)
 
 	local text = sectionContainer:object("TextLabel", {
 		Position = UDim2.new(0, 4, 0.5, 0),
@@ -1735,7 +1735,7 @@ function Library:section(options)
 
 	local functionContainer = sectionContainer:object("Frame", {
 		Size = UDim2.fromScale(0, 0),
-		BackgroundTransparency = 1
+		BackgroundTransparency = 2
 	})
 
 
