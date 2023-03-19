@@ -1715,13 +1715,13 @@ function Library:section(options)
 
 	local sectionContainer = self.container:object("TextButton", {
 		BackgroundTransparency = 1,
-		Size = UDim2.new(1, -24, 0, 22)
-	}):round(7):stroke("Secondary", 0)
+		Size = UDim2.new(1, -24, 0, 52)
+	}):round(7):stroke("Secondary", 1)
 
 	local text = sectionContainer:object("TextLabel", {
 		Position = UDim2.new(0.5),
 		Text = options.Name,
-		TextSize = 14,
+		TextSize = 17,
 		Theme = {
 			TextColor3 = "StrongText",
 			BackgroundColor3 = {"Secondary", -10}
