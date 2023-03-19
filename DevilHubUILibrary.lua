@@ -1715,7 +1715,7 @@ function Library:section(options)
 
 	local sectionContainer = self.container:object("TextButton", {
 		BackgroundTransparency = 1,
-		Size = UDim2.new(0, 0, 0, 0)
+		Size = UDim2.new(1, 0, 0, 30)
 	}):round(7):stroke("Secondary", 2)
 
 	local text = sectionContainer:object("TextLabel", {
@@ -1725,7 +1725,7 @@ function Library:section(options)
 		TextSize = 18,
 		Theme = {
 			TextColor3 = "StrongText",
-			BackgroundColor3 = {"}
+			BackgroundColor3 = {"Secondary"}
 		},
 		TextXAlignment = Enum.TextXAlignment.Left, 
 		AnchorPoint = Vector2.new(0, 0.5)
@@ -1734,7 +1734,7 @@ function Library:section(options)
 
 
 	local functionContainer = sectionContainer:object("Frame", {
-		Size = UDim2.new(1, 0, 1, 0),
+		Size = UDim2.fromScale(0, 0),
 		BackgroundTransparency = 1
 	})
 
@@ -1759,7 +1759,6 @@ function Library:section(options)
 		layout = layout
 	}, Library)
 end
-
 
 function Library:button(options)
 	options = self:set_defaults({
