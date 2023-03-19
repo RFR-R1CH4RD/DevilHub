@@ -1734,7 +1734,7 @@ function Library:section(options)
 
 
 	local functionContainer = sectionContainer:object("Frame", {
-		Size = UDim2.fromScale(1, 1),
+		Size = UDim2.fromScale(0, 0),
 		BackgroundTransparency = 1
 	})
 
