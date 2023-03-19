@@ -1719,15 +1719,15 @@ function Library:section(options)
 	}):round(7):stroke("Secondary", 2)
 
 	local text = sectionContainer:object("TextLabel", {
-		Position = UDim2.new(0, 4, 0.5, 0), -- X: 4, Y: 0.5
+		Position = UDim2.new(0.5),
 		Text = options.Name,
 		TextSize = 18,
 		Theme = {
 			TextColor3 = "StrongText",
 			BackgroundColor3 = {"Secondary", -10}
 		},
-		TextXAlignment = Enum.TextXAlignment.Left,
-		AnchorPoint = Vector2.new(0, 0.5) -- X: 0, Y: 0.5
+		TextXAlignment = Enum.TextXAlignment.Center,
+		AnchorPoint = Vector2.new(0.5, 0.5)
 	})
 	text.Size = UDim2.fromOffset(text.TextBounds.X + 4, text.TextBounds.Y)
 
@@ -1768,7 +1768,7 @@ function Library:button(options)
 
 	local buttonContainer = self.container:object("TextButton", {
 		Theme = {BackgroundColor3 = "Secondary"},
-		Size = UDim2.new(1, -9, 0, 32)
+		Size = UDim2.new(1, -20, 0, 52)
 	}):round(7)
 
 	local text = buttonContainer:object("TextLabel", {
