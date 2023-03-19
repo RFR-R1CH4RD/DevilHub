@@ -1718,6 +1718,11 @@ function Library:section(options)
 		Size = UDim2.new(0, 0, 0, 0)
 	}):round(7):stroke("Secondary", 2)
 
+	local sectionContainer = self.container:object("TextButton", {
+		BackgroundTransparency = 2,
+		Size = UDim2.new(0, 0, 0, 0)
+	}):round(7):stroke("Secondary", 2)
+
 	local text = sectionContainer:object("TextLabel", {
 		Position = UDim2.new(0.0),
 		Text = options.Name,
