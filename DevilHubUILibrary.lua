@@ -3384,7 +3384,7 @@ end
 function Library:textbox(options)
 	options = self:set_defaults({
 		Name = "Text Box",
-		Placeholder = "Type something..",
+		Placeholder = "Type here..",
 		Description = nil,
 		Callback = function(t) end
 	}, options)
