@@ -76,7 +76,7 @@ local Library = {
 	},
 	WelcomeText = nil,
 	DisplayName = nil,
-	DragSpeed = 0.06,
+	DragSpeed = 0.09,
 	LockDragging = false,
 	ToggleKey = Enum.KeyCode.Home,
 	UrlLabel = nil,
@@ -393,11 +393,7 @@ end
 	
 ]]
 
-local updateSettings = function(property, value)
-    settings[property] = value
-    writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
-end
-
+local updateSettings = function() end
 
 function Library:set_status(txt)
 	self.statusText.Text = txt
@@ -407,7 +403,6 @@ function Library:create(options)
 
 	local settings = {
 		Theme = "Midnight"
-		DragSpeed = 0.03
 	}
 
 	if readfile and writefile and isfile then
@@ -417,13 +412,9 @@ function Library:create(options)
 		settings = HTTPService:JSONDecode(readfile("MercurySettings.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
-                      settings[property] = value
-                      writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
-                      if property == "DragSpeed" then
-                      Library.DragSpeed = (20 - value) / 100
-                  end
-            end
-
+			settings[property] = value
+			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
+		end
 	end
 
 	options = self:set_defaults({
@@ -900,12 +891,10 @@ function Library:create(options)
 		Name = "UI Drag Speed",
 		Description = "How smooth the dragging looks.",
 		Max = 20,
-		Default = 14,
+		Default = 17,
 		Callback = function(value)
-                Library.DragSpeed = (20 - value)/100
-                updateSettings("DragSpeed", Library.DragSpeed)
-                end,
-
+			Library.DragSpeed = (20 - value)/100
+		end,
 	}
 
 	local creditsTab = Library.tab(mt, {
