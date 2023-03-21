@@ -76,7 +76,7 @@ local Library = {
 	},
 	WelcomeText = nil,
 	DisplayName = nil,
-	DragSpeed = 0.06,
+	DragSpeed = 0.09,
 	LockDragging = false,
 	ToggleKey = Enum.KeyCode.Home,
 	UrlLabel = nil,
