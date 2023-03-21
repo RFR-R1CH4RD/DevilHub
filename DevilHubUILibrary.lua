@@ -76,7 +76,7 @@ local Library = {
 	},
 	WelcomeText = nil,
 	DisplayName = nil,
-	DragSpeed = 0.09,
+	DragSpeed = 0.06,
 	LockDragging = false,
 	ToggleKey = Enum.KeyCode.Home,
 	UrlLabel = nil,
@@ -891,7 +891,7 @@ function Library:create(options)
 		Name = "UI Drag Speed",
 		Description = "How smooth the dragging looks.",
 		Max = 20,
-		Default = 17,
+		Default = 14,
 		Callback = function(value)
 			Library.DragSpeed = (20 - value)/100
 		end,
