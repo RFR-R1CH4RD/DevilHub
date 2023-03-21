@@ -393,7 +393,11 @@ end
 	
 ]]
 
-local updateSettings = function() end
+local updateSettings = function(property, value)
+    settings[property] = value
+    writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
+end
+
 
 function Library:set_status(txt)
 	self.statusText.Text = txt
@@ -403,6 +407,7 @@ function Library:create(options)
 
 	local settings = {
 		Theme = "Midnight"
+		DragSpeed = 0.03
 	}
 
 	if readfile and writefile and isfile then
@@ -893,8 +898,10 @@ function Library:create(options)
 		Max = 20,
 		Default = 14,
 		Callback = function(value)
-			Library.DragSpeed = (20 - value)/100
-		end,
+                Library.DragSpeed = (20 - value)/100
+                updateSettings("DragSpeed", Library.DragSpeed)
+                end,
+
 	}
 
 	local creditsTab = Library.tab(mt, {
