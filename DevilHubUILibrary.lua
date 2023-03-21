@@ -417,9 +417,13 @@ function Library:create(options)
 		settings = HTTPService:JSONDecode(readfile("MercurySettings.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
-			settings[property] = value
-			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
-		end
+                      settings[property] = value
+                      writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
+                      if property == "DragSpeed" then
+                      Library.DragSpeed = (20 - value) / 100
+                  end
+            end
+
 	end
 
 	options = self:set_defaults({
