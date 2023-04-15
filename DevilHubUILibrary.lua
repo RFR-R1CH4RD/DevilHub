@@ -2835,8 +2835,14 @@ function Library:credit(options)
 
 			discordContainer.MouseButton1Click:connect(function()
 				setclipboard(options.Discord)
+			function Library:notification(options)
+	                options = self:set_defaults({
+		        Title = "DevilHub",
+		        Text = "Copied to clipboard.",
+		        Duration = 3,
+		        Callback = function() end		
 			end)
-		end
+		  end
 
 		if options.V3rmillion then
 			local v3rmillionContainer = creditContainer:object("TextButton", {
