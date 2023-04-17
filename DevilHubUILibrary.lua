@@ -406,27 +406,27 @@ function Library:create(options)
 	}
 
 	if readfile and writefile and isfile then
-		if not isfile("MercurySettings.json") then
-			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
+		if not isfile("DevilHubSettings.json") then
+			writefile("DevilHubSettings.json", HTTPService:JSONEncode(settings))
 		end
-		settings = HTTPService:JSONDecode(readfile("MercurySettings.json"))
+		settings = HTTPService:JSONDecode(readfile("DevilHubSettings.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
 			settings[property] = value
-			writefile("MercurySettings.json", HTTPService:JSONEncode(settings))
+			writefile("DevilHubSettings.json", HTTPService:JSONEncode(settings))
 		end
 	end
 
 	options = self:set_defaults({
-		Name = "Mercury",
+		Name = "DevilHub",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://github.com/RFR-R1CH4RD/DevilHub"
 	}, options)
 
-	if getgenv and getgenv().MercuryUI then
-		getgenv():MercuryUI()
-		getgenv().MercuryUI = nil
+	if getgenv and getgenv().DevilHubUI then
+		getgenv():DevilHubUI()
+		getgenv().DevilHubUI = nil
 	end
 
 
@@ -575,7 +575,7 @@ function Library:create(options)
 	end
 
 	if getgenv then
-		getgenv().MercuryUI = closeUI
+		getgenv().DevilHubUI = closeUI
 	end
 
 	closeButton.MouseButton1Click:connect(function()
