@@ -644,7 +644,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "Version | v0.42",
+		Text = "Version | v0.44",
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -907,6 +907,7 @@ function Library:create(options)
 
 	creditsTab:credit{Name = "RFR_R1CH4RD", Description = "Owner & Developer", Discord = "RFR_R1CH4RD#7586", V3rmillion = ""}
 	creditsTab:credit{Name = "Real Panda", Description = "Developer", Discord = "", V3rmillion = "https://v3rmillion.net/member.php?action=profile&uid=46812"}
+	creditsTab:credit{Name = "ShadowArnd", Description = "Developer", Discord = "Arni#9634", V3rmillion = ""}
 	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = ""}
 	creditsTab:credit{Name = "DevilHub", Description = "Discord server link to join", Discord = "RFR_R1CH4RD#7586"}
 
