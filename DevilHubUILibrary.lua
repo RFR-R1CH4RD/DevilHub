@@ -909,7 +909,7 @@ function Library:create(options)
 	creditsTab:credit{Name = "Real Panda", Description = "Developer", Discord = "", V3rmillion = "https://v3rmillion.net/member.php?action=profile&uid=46812"}
 	creditsTab:credit{Name = "ShadowArnd", Description = "Developer", Discord = "Arni#9634", V3rmillion = ""}
 	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = ""}
-	creditsTab:credit{Name = "DevilHub", Description = "Discord server link to join", Discord = "RFR_R1CH4RD#7586"}
+	creditsTab:credit{Name = "DevilHub", Description = "Discord server link to join", Discord = "https://discord.gg/Qnv4ATyc"}
 
 	return mt
 end
